@@ -314,7 +314,7 @@ body {
   .slider::after {
     left: 0;
     top: 0;
-    display: block;
+    display: none;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -322,16 +322,17 @@ body {
     background-size: cover;
     will-change: opacity;
     z-index: -1;
-    box-shadow: 0 0 0 50vmax rgba(0, 0, 0, 0.7) inset;
+    box-shadow: none;
   }
 
   .slider {
     width: 100%;
+    background: var(--darkblue);
   }
 
   .slider__content {
     margin-top: 2em;
-    width: 100%;
+    width: 100vw;
     height: 80vh;
     max-height: 80vh;
     overflow: hidden;
@@ -370,6 +371,26 @@ body {
   .slider__text-item-head h3 {
     font-size: 2.5em;
   }
+
+  .slider__text-item h3::before,
+.slider__text-item p::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(0);
+  transition: transform 0.35s ease-out 0.28s;
+}
+
+.slider__text-item--active h3::before {
+  transform: translateX(100%);
+}
+
+.slider__text-item--active p::before {
+  transform: translateX(-100%);
+}
 
   .slider__nav-dots {
     background-color: var(--darkblue);

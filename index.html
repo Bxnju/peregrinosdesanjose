@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logos/white.png">
+    <link rel="stylesheet" href="css/styles/index.css">
+    <link rel="stylesheet" href="css/styles/slider.css">
+    <title>Home | Peregrinos de San José </title>
+</head>
+
+<!-- LOADER -->
+
+<div id="page-loader">
+    <span class="ball-loader"></span>
+    <span class="ball-loader"></span>
+    <span class="ball-loader"></span>
+    <span class="ball-loader"></span>
+    <span class="ball-loader"></span>
+</div>
+
+<script type="text/javascript">
+    window.onload = function () {
+        var contenedor = document.getElementById('page-loader');
+
+        contenedor.style.visibility = 'hidden';
+        contenedor.style.opacity = 0;
+    }
+</script>
+
+<!-- HEADER -->
+
+<header>
+    <div class="logo">
+        <img src="assets/logos/white.png" alt="">
+        <h1>Peregrinos de San José</h1>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="pages/aboutUs.html">Quienes somos</a>
+        <a href="pages/journey.html">Nuestro camino</a>
+        <a href="pages/intentions.html">Intenciones</a>
+        <a href="pages/contact.html">Contactanos</a>
+    </nav>
+</header>
+
+<!-- BODY -->
+
+<body>
+
+    <div class="slider" id="slider">
+        <div class="slider__content" id="slider-content">
+            <div class="slider__images">
+                <div class="slider__images-item slider__images-item--active" data-id="1"><img src="assets/media/animation.gif" /></div>
+                <div class="slider__images-item" data-id="2"><img src="assets/media/photo_2.JPG" /></div>
+                <div class="slider__images-item" data-id="3"><img src="assets/media/photo_9.jpg" /></div>
+                <div class="slider__images-item" data-id="4"><img src="assets/media/photo_4.JPG" /></div>
+                <div class="slider__images-item" data-id="5"><img src="assets/media/photo_5.JPG" /></div>
+                <div class="slider__images-item" data-id="6"><img src="assets/media/photo_8.JPG" /></div>
+                <div class="slider__images-item" data-id="7"><img src="assets/media/photo_10.JPG" /></div>
+            </div>
+            <div class="slider__text">
+                <div class="slider__text-item slider__text-item--active" data-id="1">
+                    <div class="slider__text-item-head">
+                        <h3>Nuestro Viaje</h3>
+                    </div>
+                    <div class="slider__text-item-info">
+                        <p>“Para nuestro próximo desafío, hemos decidido realizar la peregrinación a Santiago de Compostela, en España. Nos embarcaremos en este viaje durante 10 a 15 días a mediados del año 2024.
+                            ”</p>
+                    </div>
+                </div>
+                <div class="slider__text-item" data-id="2">
+                    <div class="slider__text-item-head">
+                        <h3 translate="no">Convivio</h3>
+                    </div>
+                    <div class="slider__text-item-info">
+                        <p>“Mist to mist, drops to drops. For water thou art, and unto water shalt thou return”</p>
+                    </div>
+                </div>
+                <div class="slider__text-item" data-id="3">
+                    <div class="slider__text-item-head">
+                        <h3>Agrupación</h3>
+                    </div>
+                    <div class="slider__text-item-info">
+                        <p>“Como grupo, buscamos vivir esta experiencia de Fe ofreciéndola como un gran sacrificio por el crecimiento y la unión incondicional de nuestra agrupación formada en el amor de Dios.                            ”</p>
+                    </div>
+                </div>
+                <div class="slider__text-item" data-id="4">
+                    <div class="slider__text-item-head">
+                        <h3>Comienzos</h3>
+                    </div>
+                    <div class="slider__text-item-info">
+                        <p>“What are men to rocks and mountains?”</p>
+                    </div>
+                </div>
+                <div class="slider__text-item" data-id="5">
+                    <div class="slider__text-item-head">
+                        <h3>Misiones</h3>
+                    </div>
+                    <div class="slider__text-item-info">
+                        <p>“On all the peaks lies peace”</p>
+                    </div>
+                </div>
+                <div class="slider__text-item" data-id="6">
+                    <div class="slider__text-item-head">
+                        <h3>Lideres</h3>
+                    </div>
+                    <div class="slider__text-item-info">
+                        <p>“What are men to rocks and mountains?”</p>
+                    </div>
+                </div>
+                <div class="slider__text-item" data-id="7">
+                    <div class="slider__text-item-head">
+                        <h3>Familia</h3>
+                    </div>
+                    <div class="slider__text-item-info">
+                        <p>“On all the peaks lies peace”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider__nav">
+            <div class="slider__nav-arrows">
+                <div class="slider__nav-arrow slider__nav-arrow--left" id="left">to left</div>
+                <div class="slider__nav-arrow slider__nav-arrow--right" id="right">to right</div>
+            </div>
+            <div class="slider__nav-dots" id="slider-dots">
+                <div class="slider__nav-dot slider__nav-dot--active" data-id="1"></div>
+                <div class="slider__nav-dot" data-id="2"></div>
+                <div class="slider__nav-dot" data-id="3"></div>
+                <div class="slider__nav-dot" data-id="4"></div>
+                <div class="slider__nav-dot" data-id="5"></div>
+                <div class="slider__nav-dot" data-id="6"></div>
+                <div class="slider__nav-dot" data-id="7"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- MODAL -->
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+</body>
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="column center_content">
+        <h1>Peregrinos de San José</h1>
+        <h3>Acompañanos en este hermoso camino</h3>
+        <div class="footer_row">
+            <div class="social_media">
+                <h2>Visita nuestras redes</h2>
+                <div class="row">
+                    <a href="" target="_blank">
+                        <img src="assets/icons/facebook.png" title="Visita nuestro facebook" alt="">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="assets/icons/instagram.png" title="Visita nuestro instagram" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="contact">
+                <h2>Contactanos</h2>
+                <div class="row">
+                    <a href="" target="_blank">
+                        <img src="assets/icons/whatsapp.png" alt="">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="assets/icons/email.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="help_us center_content">
+                <h2>Apoyanos y se parte del proyecto</h2>
+                <div class="row">
+                    <a href="" target="_blank">
+                        <img src="assets/icons/gofundme.png" alt="">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="assets/icons/logos-bancolombia-nequi.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="intentions">
+                <h2>Envianos tus intenciones</h2>
+                <a href="" target="_blank">
+                    <img src="assets/icons/paloma.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/scripts/modal.js"></script>
+<script src="js/scripts/slider.js"></script>
+<script src="js/scripts/navbar.js"></script>
+
+</html>

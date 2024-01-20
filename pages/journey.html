@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/logos/white.png">
+    <link rel="stylesheet" href="../css/requirements/requirements.css">
+    <link rel="stylesheet" href="../css/styles/journey.css">
+    <title>Camino | Peregrinos de San José </title>
+</head>
+
+<!-- LOADER -->
+
+<div id="page-loader">
+    <span class="ball-loader"></span>
+    <span class="ball-loader"></span>
+    <span class="ball-loader"></span>
+    <span class="ball-loader"></span>
+    <span class="ball-loader"></span>
+</div>
+
+<script type="text/javascript">
+    window.onload = function () {
+        var contenedor = document.getElementById('page-loader');
+
+        contenedor.style.visibility = 'hidden';
+        contenedor.style.opacity = 0;
+    }
+</script>
+
+<!-- HEADER -->
+
+<header>
+    <div class="logo">
+        <img src="../assets/logos/white.png" alt="">
+        <h1>Peregrinos de San José</h1>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="aboutUs.html">Quienes somos</a>
+        <a href="#">Nuestro camino</a>
+        <a href="intentions.html">Intenciones</a>
+        <a href="contact.html">Contactanos</a>
+    </nav>
+</header>
+
+<!-- BODY -->
+
+<body>
+
+    <section>
+        <div class="curved-bg"></div>
+        <div class="title">
+            <h1>¡Conoce a detalle el camino!</h1>
+            <h3>En el siguiente mapa interactivo podrás ver cada una de las etapas planeadas para la peregrinación</h3>
+        </div>
+        <iframe loading="eager" src="https://www.google.com/maps/d/u/1/embed?mid=1cKXfVjZuU-2WkKGTT-oHFweGYJr2t94w"
+            data-opt-src="https://www.google.com/maps/d/u/1/embed?mid=1cKXfVjZuU-2WkKGTT-oHFweGYJr2t94w"
+            style="border:0;" allowfullscreen="" width="100%" height="600px" frameborder="0"></iframe>
+    </section>
+
+</body>
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="column center_content">
+        <h1>Peregrinos de San José</h1>
+        <h3>Acompañanos en este hermoso camino</h3>
+        <div class="footer_row">
+            <div class="social_media">
+                <h2>Visita nuestras redes</h2>
+                <div class="row">
+                    <a href="" target="_blank">
+                        <img src="../assets/icons/facebook.png" title="Visita nuestro facebook" alt="">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="../assets/icons/instagram.png" title="Visita nuestro instagram" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="contact">
+                <h2>Contactanos</h2>
+                <div class="row">
+                    <a href="" target="_blank">
+                        <img src="../assets/icons/whatsapp.png" alt="">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="../assets/icons/email.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="help_us center_content">
+                <h2>Apoyanos y se parte del proyecto</h2>
+                <div class="row">
+                    <a href="" target="_blank">
+                        <img src="../assets/icons/gofundme.png" alt="">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="../assets/icons/logos-bancolombia-nequi.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="intentions">
+                <h2>Envianos tus intenciones</h2>
+                <a href="" target="_blank">
+                    <img src="../assets/icons/paloma.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../js/scripts/backgroundEffect.js"></script>
+<script src="../js/scripts/navbar.js"></script>
+</html>

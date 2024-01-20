@@ -1,0 +1,81 @@
+.hidden {
+	opacity: 0;
+	filter: blur(3px);
+	transform: translateX(-100%);
+	transition: all 1s;
+}
+
+.hidden_left {
+	opacity: 0;
+	filter: blur(3px);
+	transform: translateX(100%);
+	transition: all 1s;
+}
+
+.show {
+	opacity: 1 !important;
+	filter: blur(0);
+	transform: translateX(0);
+}
+
+@keyframes appear {
+	from {
+		opacity: 0;
+		filter: blur(9px);
+	}
+
+	to {
+		opacity: 1;
+		filter: blur(3);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		filter: blur(9px);
+		transform: translateX(-100%);
+	}
+
+	to {
+		opacity: 1;
+		filter: blur(0);
+		transform: translateX(0);
+	}
+}
+
+@keyframes fadeInLeft {
+	from {
+		opacity: 0;
+		filter: blur(9px);
+		transform: translateX(100%);
+	}
+
+	to {
+		opacity: 1;
+		filter: blur(0);
+		transform: translateX(0);
+	}
+}
+
+@keyframes ripple {
+	from {
+		opacity: 1;
+		transform: scale(0);
+	}
+
+	to {
+		opacity: 0;
+		transform: scale(3);
+	}
+}
+
+@keyframes pulse{
+	0%{
+		transform: scale(0.9);
+	}50%{
+		transform: scale(1);
+	}100%{
+		transform: scale(0.9);
+	}
+}

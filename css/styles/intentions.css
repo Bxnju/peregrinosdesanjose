@@ -1,0 +1,146 @@
+@import url('../requirements/requirements.css');
+
+body {
+    background: var(--white);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    padding: 2em 0;
+    background: transparent;
+}
+
+section h1 {
+    font-size: 3rem;
+    font-family: var(--fira);
+    color: var(--red);
+    text-align: center;
+    text-shadow: .1em .1em 0 var(--white);
+    animation: fadeIn 1s ease-out;
+}
+
+section h3 {
+    font-size: 1rem;
+    font-family: var(--palanquin);
+    color: var(--brown);
+    text-align: center;
+    text-shadow: .1em .1em 0 var(--white);
+    animation: fadeInLeft 1s ease-out;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 2em 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.card-container a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.card {
+    line-height: 1;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 16em;
+    height: 15em;
+    background: var(--white);
+    box-shadow: 4px 4px 1em 0 rgba(0, 0, 0, 0.2), inset 4px 4px 0.8em 0 #ffffff;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: 4px 4px 1em 0 rgba(0, 0, 0, 0.2), inset 4px 4px 0.8em 0 #ffffff;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.card-title {
+    font-size: 1.3em;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--brown);
+    color: var(--white);
+    width: 100%;
+    height: 4em;
+    font-weight: bold;
+    font-family: var(--fira);
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 0 2em;
+    background: var(--white);
+    height: 100%;
+    font-family: var(--palanquin);
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+    height: 5em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    background: var(--darkblue);
+    font-size: 12px;
+    color: var(--white);
+    font-family: var(--crimson);
+}
+
+.curved-bg {
+    filter: blur(3px);
+    animation: appear 1s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-color: #fdf0e6;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23669bbc' fill-opacity='0.78' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-size: cover;
+    pointer-events: none;
+    /* Permite que los eventos del mouse pasen a través de este elemento */
+}
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 1200px) {
+
+    section h1{
+        text-align: center;
+        padding: 0 1em;
+    }
+
+    section h3{
+        padding: 0 3em;
+    }
+
+}

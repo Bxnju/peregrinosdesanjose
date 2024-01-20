@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/logos/white.png">
+    <link rel="stylesheet" href="../css/requirements/requirements.css">
+    <link rel="stylesheet" href="../css/styles/aboutUs.css">
+    <title>Quienes somos | Peregrinos de San José </title>
+</head>
+
+<!-- LOADER -->
+
+<div id="page-loader">
+    <span class="ball-loader"></span>
+    <span class="ball-loader"></span>
+    <span class="ball-loader"></span>
+    <span class="ball-loader"></span>
+    <span class="ball-loader"></span>
+</div>
+
+<script type="text/javascript">
+    window.onload = function () {
+        var contenedor = document.getElementById('page-loader');
+
+        contenedor.style.visibility = 'hidden';
+        contenedor.style.opacity = 0;
+    }
+</script>
+
+<!-- HEADER -->
+
+<header>
+    <div class="logo">
+        <img src="../assets/logos/white.png" alt="">
+        <h1>Peregrinos de San José</h1>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="#">Quienes somos</a>
+        <a href="journey.html">Nuestro camino</a>
+        <a href="intentions.html">Intenciones</a>
+        <a href="contact.html">Contactanos</a>
+    </nav>
+</header>
+
+<!-- BODY -->
+
+<body>
+
+    <div class="curved-bg"></div>
+    <section>
+        <div class="first_paragraph">
+            <div class="img">
+                <img class="hidden" src="../assets/media/photo_4.jpg" onclick="openModal('../assets/media/photo_4.jpg')" alt="">
+                <img class="hidden" src="../assets/media/photo_7.jpg" onclick="openModal('../assets/media/photo_7.jpg')" alt="">
+            </div>
+            <div class="text hidden_left">
+                <h1>Nuestros Inicios</h1>
+                <p>Somos una agrupación de jóvenes que hace parte del Movimiento de Vida Cristiana.
+                    Empezamos a reunirnos en la secundaria, y nos hemos acompañado desde la adolescencia hasta
+                    la juventud en la Universidad, con tropiezos y levantadas.</p>
+            </div>
+        </div>
+        <div class="second_paragraph">
+            <div class="text hidden">
+                <h1>Nuestro Guía Espiritual</h1>
+                <p>Por más de 7 años, hemos sido guiados por el padre Santiago Posada y otros miembros del Movimiento,
+                    con el
+                    objetivo de crecer en la fe y la amistad en Dios.</p>
+            </div>
+            <div class="img">
+                <img class="hidden_left" onclick="openModal('../assets/media/photo_8.jpg')" src="../assets/media/photo_8.jpg" alt="">
+            </div>
+        </div>
+        <div class="third_paragraph">
+            <div class="img">
+                <img class="hidden" src="../assets/media/photo_5.jpg" onclick="openModal('../assets/media/photo_5.jpg')" alt="">
+                <img class="hidden" src="../assets/media/photo_2.jpg" onclick="openModal('../assets/media/photo_2.jpg')" alt="">
+            </div>
+            <div class="text hidden_left">
+                <h1>Experiencias Formativas</h1>
+                <p>A lo largo de nuestro camino, hemos hecho parte de distintas actividades que nos han formado y
+                    desarrollado habilidades para el acompañamiento de jóvenes, como lo es Convivio.</p>
+            </div>
+        </div>
+        <div class="fourth_paragraph">
+            <div class="text hidden">
+                <h1>Compromiso y Crecimiento</h1>
+                <p>Asimismo, hemos acompañado comunidades de niños para el encuentro con Dios a través de Navidad es
+                    Jesús.
+                    También hemos sido parte de numerosos retiros espirituales que han enriquecido nuestro
+                    autoconocimiento y
+                    crecimiento personal.</p>
+            </div>
+            <div class="img">
+                <img class="hidden_left" onclick="openModal('../assets/media/photo_1.jpg')" src="../assets/media/photo_1.jpg" alt="">
+                <img class="hidden_left" onclick="openModal('../assets/media/photo_6.jpg')" src="../assets/media/photo_6.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+
+</body>
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="column center_content">
+        <h1>Peregrinos de San José</h1>
+        <h3>Acompañanos en este hermoso camino</h3>
+        <div class="footer_row">
+            <div class="social_media">
+                <h2>Visita nuestras redes</h2>
+                <div class="row">
+                    <a href="" target="_blank">
+                        <img src="../assets/icons/facebook.png" title="Visita nuestro facebook" alt="">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="../assets/icons/instagram.png" title="Visita nuestro instagram" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="contact">
+                <h2>Contactanos</h2>
+                <div class="row">
+                    <a href="" target="_blank">
+                        <img src="../assets/icons/whatsapp.png" alt="">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="../assets/icons/email.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="help_us center_content">
+                <h2>Apoyanos y se parte del proyecto</h2>
+                <div class="row">
+                    <a href="" target="_blank">
+                        <img src="../assets/icons/gofundme.png" alt="">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="../assets/icons/logos-bancolombia-nequi.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="intentions">
+                <h2>Envianos tus intenciones</h2>
+                <a href="" target="_blank">
+                    <img src="../assets/icons/paloma.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../js/scripts/observer.js"></script>
+<script src="../js/scripts/modal.js"></script>
+<script src="../js/scripts/backgroundEffect.js"></script>
+<script src="../js/scripts/navbar.js"></script>
+</html>

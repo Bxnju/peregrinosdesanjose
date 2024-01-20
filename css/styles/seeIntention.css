@@ -13,7 +13,7 @@ section {
     background: var(--white);
 }
 
-section button{
+section button {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@ section button{
     animation: fadeIn 1s ease-in-out;
 }
 
-section button:hover{
+section button:hover {
     transform: scale(1.05);
     box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
 }

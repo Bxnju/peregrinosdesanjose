@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const footer = document.createElement('div');
             footer.classList.add('card-footer');
-            footer.textContent = `Intención por ${intencionSeleccionada.nombre} desde ${intencionSeleccionada.pais}`;
+            footer.textContent = `Intención por ${intencionSeleccionada.nombre.length > 0 ? intencionSeleccionada.nombre : "Anonimo"} desde ${intencionSeleccionada.pais.length > 0 ? intencionSeleccionada.pais : "algún lugar"}`;
             newCard.appendChild(footer);
 
             intencionContainer.appendChild(newCard);

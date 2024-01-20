@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             const values = data.values;
+
             const cardContainer = document.getElementById('card-container');
             let nuevosRegistros = [];
 
@@ -40,7 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 const footer = document.createElement('div');
                 footer.classList.add('card-footer');
-                footer.textContent = `Intención por ${record.nombre} desde ${record.pais}`;
+                footer.textContent = `Intención por ${record.nombre.length > 0 ? record.nombre : "Anonimo"} desde ${record.pais.length > 0 ? record.pais : "algún lugar"}`;
+                console.log(record.nombre);
                 newCard.appendChild(footer);
 
                 linkCard.appendChild(newCard);

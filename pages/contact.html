@@ -65,6 +65,13 @@
         </a>
     </section>
 
+    <!-- MODAL -->
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
 </body>
 
 <!-- FOOTER -->
@@ -77,10 +84,10 @@
             <div class="social_media">
                 <h2>Visita nuestras redes 😁</h2>
                 <div class="row">
-                    <a href="" target="_blank">
+                    <a href="https://www.facebook.com/profile.php?id=61555683374581&sfnsn=scwspwa&mibextid=RUbZ1f" target="_blank">
                         <img src="../assets/icons/facebook.png" title="Visita nuestro facebook" alt="facebook">
                     </a>
-                    <a href="" target="_blank">
+                    <a href="https://www.instagram.com/saint_josephs_pilgrims?igsh=MnU0dmFqODlwYmtj" target="_blank">
                         <img src="../assets/icons/instagram.png" title="Visita nuestro instagram" alt="instagram">
                     </a>
                 </div>
@@ -88,7 +95,7 @@
             <div class="contact">
                 <h2>Contactanos 📨</h2>
                 <div class="row">
-                    <a href="" target="_blank">
+                    <a href="https://api.whatsapp.com/send?phone=573052516503&text=Hola%20peregrinos%20de%20San%20Jos%C3%A9%F0%9F%98%81%F0%9F%91%8B%20%0AVengo%20desde%20su%20p%C3%A1gina%20web%F0%9F%96%A5%F0%9F%95%8A%20%0A%C2%A1Quiero%20contactar%20con%20ustedes!%0A" target="_blank">
                         <img src="../assets/icons/whatsapp.png" alt="whatsapp">
                     </a>
                     <a href="mailto:sanjoseperegrinos@gmail.com" target="_blank">
@@ -102,7 +109,7 @@
                     <a href="https://gofund.me/8cc52681" target="_blank">
                         <img src="../assets/icons/gofundme.png" alt="gofundme">
                     </a>
-                    <a href="" target="_blank">
+                    <a onclick="openModal('../assets/media/QR.jpg')">
                         <img src="../assets/icons/logos-bancolombia-nequi.png" alt="bancolombia">
                     </a>
                 </div>
@@ -118,5 +125,6 @@
 </footer>
 <script src="../js/scripts/navbar.js"></script>
 <script src="../js/scripts/backgroundEffect.js"></script>
+<script src="../js/scripts/modal.js"></script>
 
 </html>

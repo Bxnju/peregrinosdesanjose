@@ -146,10 +146,10 @@ section .button_forms {
 
 /*RESPONSIVE*/
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
 
     section{
-        margin-top: 4em;
+        margin-top: 1em;
     }
 
     section h1 {
@@ -162,9 +162,16 @@ section .button_forms {
     }
 
     section .button_forms {
-        position: absolute;
-        margin-right: 8%;
-        top: 7em;
+        position: relative;
+        align-self: center;
+        justify-self: center;
+        margin: 0 0 2em 0;
+        right: 0;
+        top: 0;
+        font-family: var(--crimson);
+        padding: 1em 2em;
+        background: var(--darkred);
+        color: var(--white);
     }
 
 }

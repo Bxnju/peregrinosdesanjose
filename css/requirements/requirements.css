@@ -471,4 +471,8 @@ footer .footer_row {
         align-items: center;
     }
 
+    footer .intentions a>img {
+        animation: pulse 1s infinite ease;
+    }
+
 }

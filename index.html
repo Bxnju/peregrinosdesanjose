@@ -15,24 +15,6 @@
     <title>Home | Peregrinos de San José </title>
 </head>
 
-<!-- LOADER -->
-
-<div id="page-loader">
-    <span class="ball-loader"></span>
-    <span class="ball-loader"></span>
-    <span class="ball-loader"></span>
-    <span class="ball-loader"></span>
-    <span class="ball-loader"></span>
-</div>
-
-<script type="text/javascript">
-    window.onload = function () {
-        var contenedor = document.getElementById('page-loader');
-
-        contenedor.style.visibility = 'hidden';
-        contenedor.style.opacity = 0;
-    }
-</script>
 
 <!-- HEADER -->
 
@@ -152,7 +134,16 @@
         </div>
     </div>
 
-
+    <section>
+        <div class="curved-bg"></div>
+        <div class="title">
+            <h1>¡Te contamos quienes somos y que haremos!</h1>
+            <h3>En el siguiente video podrás conocer un poco más sobre nosotros y como será el viaje.</h3>
+        </div>
+        <iframe width="560" height="500" src="https://www.youtube.com/embed/qR89E7_vAmw?si=tUAz59OOIXlBfOTB" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
 
     <!-- MODAL -->
 
@@ -217,5 +208,6 @@
 <script src="js/scripts/modal.js"></script>
 <script src="js/scripts/slider.js"></script>
 <script src="js/scripts/navbar.js"></script>
+<script src="js/scripts/backgroundEffect.js"></script>
 
 </html>
